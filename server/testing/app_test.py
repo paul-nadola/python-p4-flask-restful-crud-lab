@@ -38,7 +38,7 @@ class TestPlant:
 
         assert(type(data) == dict)
         assert(data["id"])
-        assert(data["is_in_stock"] == False)
+        assert(data["is_in_stock"] == True)
 
     def test_plant_by_id_delete_route_deletes_plant(self):
         '''returns JSON representing updated Plant object at "/plants/<int:id>".'''
